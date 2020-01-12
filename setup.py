@@ -24,7 +24,7 @@ with open(os.path.join(os.path.dirname(__file__), 'test_requirements.txt')) as f
     test_required = f.read().splitlines()
 
 setup(
-    name='zappa',
+    name='sheldonys-zappa',
     version=__version__,
     packages=['zappa'],
     install_requires=required,
@@ -32,10 +32,10 @@ setup(
     test_suite='nose.collector',
     include_package_data=True,
     license='MIT License',
-    description='Server-less Python Web Services for AWS Lambda and API Gateway',
+    description='Server-less Python Web Services for AWS Lambda and API Gateway. Forked from https://github.com/Miserlou/Zappa. Fixed locale issue when install.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/Miserlou/Zappa',
+    url='https://github.com/SheldonYS/Zappa',
     author='Rich Jones',
     author_email='rich@openwatch.net',
     entry_points={
